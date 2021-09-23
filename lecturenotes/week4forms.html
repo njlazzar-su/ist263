@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Unit 4 Forms</title>
+        <body>
+
+            <form action="mailto:njlazzar@syr.eduq" method="POST"> 
+                
+                <!-- Labels are associated with form tags by the value in the 
+                for attribute in label, and the id attribute in the form tag -->
+
+                <label for="fullname">Enter Full Name: </label>
+                <input type="text" id="fullname" name="fname">
+                <br>
+                <label for = "Complaint"> Describe Your Complaint:</label> <br>
+                <textarea id="complaint" name="complaint">Enter Your Complaint Here.</textarea>
+                <br>
+
+                <!-- Radio Buttons are linked together using the same value for name
+                all the labels for attribute values must be unique -->
+
+                <p>How Angry Are You?</p>
+                <input type="radio" id="angry1" name="angry" value="very angry">
+                <label for="angry1">Very Angry</label>
+                <br>
+                <input type="radio" id="angry2" name="angry" value="not too angry">
+                <label for="angry2">Not Too Angry</label>
+                <br>
+                <label for="contactmethod">How would you like us to contact you?</label>
+                <select id="contactmethod" name="contactmethod">
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="snail mail">Snail Mail</option>
+                </select>
+                <br>
+                <label for="contacttime">Can We Contact You at Night?</label>
+                <input type="checkbox" id="contacttime" name="contacttime" value="yes">
+                <br>
+                <input type="submit" value="Send My Complaint">
+            </form>
+
+       
+        </body>
+    </head>
+</html>
