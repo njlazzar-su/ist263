@@ -1,0 +1,28 @@
+p {color: red;
+    font-size: 200%;
+    font-weight: bolder;
+    }
+
+
+
+h1 {color: purple;
+    font-size: 400%;
+    letter-spacing: 0.5em;
+    }
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    }
+
+
+h1, h2 {font-size: 400%;
+color: mediumaquamarine;
+    /* this is a group selector, it will style all headings */
+    }
+
+p a{
+    color: blue
+    /* only styles links in the p tab */
+}
