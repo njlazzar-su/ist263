@@ -1,0 +1,49 @@
+.image
+{
+    padding: 20px;
+}
+
+nav
+{
+    background-color:#eb770a;
+    padding: 10px
+    margin-bottom 30px;
+    text-align: center;
+    
+    
+}
+
+nav a
+{
+    color: #1d0aeb
+}
+
+nav a:hover
+{
+    background-color: #fff
+}
+
+body{
+    background-color: #1d0aeb
+    
+    }
+
+ h1 
+{
+    color: #fff
+}
+
+p 
+{
+    color: #fff
+}
+
+h2 
+{
+    color: #fff
+}
+
+ol
+{
+    color: #fff;
+}
