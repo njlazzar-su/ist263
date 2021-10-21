@@ -196,7 +196,9 @@ header.sticky ul li a
 {
     font-size: 20px;
     font-weight: 600;
+    padding: 20px
 }
+
 
 .skills
 {
@@ -214,7 +216,7 @@ header.sticky ul li a
 .skills .content .skillsBx
 {
     max-width: calc(50% - 40px);
-    padding: 60px 40px;
+    padding: 60px 60px;
     margin: 20px;
     background: #eb770a;
 }
@@ -225,5 +227,66 @@ header.sticky ul li a
     font-weight: 600;
     font-size: 20px;
     line-height: 1em;
+}
+
+.contact
+{
+    background: #111
+
+}
+
+.formbx
+{
+    min-width: 60%;
+}
+
+.formbx form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.formbx form h3,
+.contactInfo h3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formbx form input,
+.formbx form textarea
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+
+}
+
+.formbx form textarea
+{
+    min-height: 200px;
+}
+
+.formbx form input::placeholder,
+.formbx form textarea::placeholder
+{
+    color: #999;
+}
+
+.formbx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
