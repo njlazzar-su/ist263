@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <style>
+       button {
+ padding: 0.9em 2em;
+ border: 2px solid #17C3B2;
+ position: relative;
+ overflow: hidden;
+ background-color: transparent;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 16px;
+ color: #ddd;
+ transition: .3s;
+ z-index: 1;
+ font-family: inherit;
+ color: #17C3B2;
+ margin: 0 auto;
+}
+
+button::before {
+ content: '';
+ width: 0;
+ height: 300%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(45deg);
+ background: #17C3B2;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+button:hover::before {
+ width: 105%;
+}
+
+button:hover {
+ color: #111;
+}
+
+svg
+{
+    width: 100%;
+    height: 100%;
+}
+
+svg text
+{
+    text-align: center;
+    width: 50px;
+}
+    </style>
+<script>
+    function openLink () {
+        document.getElementById("opennew").innerHTML = "lets Go!";
+    }
+</script>
+</head>
+<body>
+    <button id = "opennew" a href = "www.google.com" onclick = "openLink();">Hover me</button>
+    <button>Hi</button>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L48,106.7C96,149,192,235,288,266.7C384,299,480,277,576,224C672,171,768,85,864,85.3C960,85,1056,171,1152,186.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FF0066" d="M35,-52.2C43.8,-41.9,48.1,-29.4,53.6,-16.5C59.1,-3.5,65.7,10,60.9,18.3C56.1,26.5,39.9,29.5,27.8,36C15.7,42.6,7.9,52.7,-2.6,56.3C-13.1,59.9,-26.2,57,-28.9,47.5C-31.6,37.9,-23.9,21.6,-26.9,9.4C-29.9,-2.7,-43.7,-10.7,-47.3,-20.1C-50.8,-29.6,-44,-40.4,-34.4,-50.5C-24.8,-60.5,-12.4,-69.7,0.4,-70.2C13.1,-70.7,26.3,-62.5,35,-52.2Z" transform="translate(100 100)" />
+        <text x="60" y="70" class="small">My</text>
+      </svg>
+</body>
+</html>
