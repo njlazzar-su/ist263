@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+*
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Oswald", sans-serif;
+scroll-behavior: smooth;
+}
+
+#home, #banner, #about
+{
+    padding: 100px;
+
+}
+
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../images/miami7.jpeg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.banner h2
+{
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding-bottom: 470px;
+}
+
+.banner h2 span
+{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.banner h3
+{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+    
+}
+
+/*.btn
+{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+} */
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+header.sticky
+{
+    background: #fff;
+    padding: 40px 100px;
+    box-shadow: 0 5px 20px  rgba(0,0,0,0.1);
+
+}
+
+header .logo 
+{
+   color: #fff;
+   font-size: 24px; 
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: 700;
+   letter-spacing: 2px;
+}
+
+header.sticky .logo
+{
+    color: #111;
+
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a
+{
+    color: #111;
+    
+}
+
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.content
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx
+{
+    padding-right: 400px;
+    font-size: 1.3em;
+    line-height: 2em;
+    
+}
+
+.contentBx h3 
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.work 
+{
+    background: black;
+    margin: 0 auto;
+    }
+
+.heading.white h2, p
+{
+    color: #fff;
+}    
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle"></div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Welcome To <br> <span>Gables Group Management</span> </h2>
+            
+            <!--<a href="#about" class="btn">About Us</a> -->
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Us</h2>
+        </div>
+        <div class="content">
+            <div class='contentBx w50'>
+                <h3>Lorem Ipsum</h3>
+
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                    
+                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+           <div class="w50">
+            <img src="../images/otto.png" class="w50">
+           </div> 
+        </div>
+    </section>
+
+    <section>
+        <section class="work" id="work">
+            <div class="heading white">
+                <h2>Work Experience</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                    
+                    <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+            </div>
+
+    </section>
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+    </script>
+
+</body>
+</html>

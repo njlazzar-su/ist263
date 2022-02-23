@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Lottery Sweepstakes</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&family=Oswald:wght@200;300&family=Yanone+Kaffeesatz&display=swap');
+
+       *
+       {
+        margin: 0; 
+           padding: 0;
+           box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+            
+           
+       }
+       
+
+
+       .custom-shape-divider-bottom-1645113158 
+        {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        
+        }
+
+        .custom-shape-divider-bottom-1645113158 svg 
+        {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 179px;
+        }
+
+        .custom-shape-divider-bottom-1645113158 .shape-fill 
+        {
+            fill: #CFB53B;
+        }
+
+        body
+       {
+           background-color: #3c3c3d;
+       }
+       section
+       {
+           position: relative;
+           width: 100%;
+           min-width: 100vh;
+           padding: 100px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       header
+       {
+           position: absolute;
+           top : 0;
+           left : 0;
+           width: 100%;
+           padding: 20px 100px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       header .logo
+       {
+           position: relative;
+           max-width: 80px;
+       }
+
+       header ul 
+       {
+           position: relative;
+           display: flex;
+           
+       }
+
+       header ul li
+       {
+           list-style: none;
+           
+       }
+
+       header ul li a 
+       {
+           display: inline-block;
+           color: #fff;
+           font-weight: 400;
+           margin-left: 40px;
+           text-decoration: none;
+        
+
+           
+       }
+       
+
+       .Content
+       {
+           position: relative;
+           width: 100%;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       .Content .textbx
+       {
+           position: relative;
+           max-width: 600px;
+       }
+
+       .Content .textbx h2
+       {
+           color: #fff;
+           font-size: 2.5em;
+           line-height: 1.4em;
+           font-weight: 500;
+           margin-top: 10px;
+           margin-bottom: 20px;
+       }
+
+       .Content .textbx h2 span
+       {
+           color: #CFB53B;
+           font-size: 1.2em;
+           font-weight: 900;
+           
+       }
+
+       .Content .textbx p
+       {
+           color: #fff;
+           margin-right: 100px;
+          font-size: 1.2em;
+           
+       }
+
+       
+       .Content  .img1
+       {
+           
+           width: 900px;
+           display: flex;
+           justify-content:center;
+           margin-top: 50px;
+           border-radius: 37% 63% 31% 69% / 76% 29% 71% 24%   ;
+           margin-left: 25px;
+           padding-left: -70px;
+           margin-bottom: 100px;
+           background: linear-gradient(11deg, rgba(60,60,61,1) 0%, rgba(207,181,59,1) 31%, rgba(255,255,255,1) 100%);
+           
+
+ 
+        
+           
+       }
+
+       
+
+       .Content  .img1 img
+       {
+           max-width: 900px;
+           float: right;
+
+           
+       }
+
+
+      .about
+      {
+          background-color: #CFB53B;
+          box-sizing: border-box;
+
+      }
+
+      .aboutcontent
+      {
+        position: relative;
+           width: 100%;
+           
+      }
+      
+      .about .abouttext h2
+       {
+            color: #fff;
+           font-size: 2.5em;
+           line-height: 1.4em;
+           font-weight: 500;
+           margin-top: 10px;
+           margin-bottom: 20px;
+           
+       }
+
+       .about .abouttext h2 span
+       {
+           color: #3c3c3d ;
+           font-size: 1.2em;
+           font-weight: 900;
+       }
+
+      .about h3
+       {
+            color: #fff;
+           font-size: 2.5em;
+           line-height: 1.4em;
+           font-weight: 500;
+           margin-top: 90px;
+           margin-bottom: 20px;
+       }
+
+       .row 
+       {
+           
+           display: flex;
+           justify-content: space-around;
+           text-align: center;
+           padding-left: 30px;
+           padding-right: 30px;
+           padding-top: 25px ;
+           padding-bottom: 25px ;
+           color: #fff;
+           font-size: 1.5em;
+           font-weight: 500;
+
+           
+           
+           
+           
+       }
+
+       .column 
+       {
+        padding: 30px;
+        padding-bottom: 40px;
+        margin: 90px;
+            /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(60, 60, 61, 0.95);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.2px);
+-webkit-backdrop-filter: blur(4.2px);
+border: 1px solid rgba(60, 60, 61, 0.36);
+        
+        
+        
+       }
+
+       .row p
+      {
+        font-size: .8em;
+        font-weight: 1000;
+        margin: 60px;
+        color:#CFB53B;
+
+
+       }
+
+       .custom-shape-divider-bottom-1645229796 
+       {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+.custom-shape-divider-bottom-1645229796 svg {
+    position: relative;
+    display: block;
+    width: calc(125% + 1.3px);
+    height: 142px;
+}
+
+.custom-shape-divider-bottom-1645229796 .shape-fill {
+    fill: #3C3C3D;
+}
+
+
+    .flip-card 
+    {
+        display: inline-flex;
+        column-gap: 10px;
+        background-color: transparent;
+        width: 400px;
+        height: 400px;
+        perspective: 1000px;
+        padding: 20px;
+        margin: 0 auto;
+        padding-bottom: 150px;
+        
+        
+        
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+      
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-front {
+        /* From https://css.glass */
+background: linear-gradient(11deg, rgba(60,60,61,1) 0%, rgba(207,181,59,1) 31%, rgba(255,255,255,1) 100%);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.6px);
+-webkit-backdrop-filter: blur(2.6px);
+
+      }
+      
+      .flip-card-back {
+        /* From https://css.glass */
+background: #3C3C3D;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+        transform: rotateY(180deg);
+      }
+
+      .roadmap .roadtext h2
+       {
+            color: #CFB53B;
+           font-size: 2.5em;
+           line-height: 1.4em;
+           font-weight: 500;
+           margin-top: 10px;
+           margin-bottom: 20px;
+           
+       }
+
+       .roadmap .roadtext h2 span
+       {
+           color: #fff ;
+           font-size: 1.2em;
+           font-weight: 900;
+           
+       }
+
+       .flip-card-front h2
+       {
+           
+        font-size: 2em;
+        color: #3c3c3d;
+        left: 0;
+        line-height: 200px;
+        margin-top: -100px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 100%;
+            
+       }
+
+       .flip-card-front p
+       {
+        left: 0;
+        line-height: 200px;
+        margin-top: -100px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 100%;
+        font-size: 1.5em;
+        color: #fff;
+       }
+
+       .flip-card-back p
+       {
+           font-size: 1.05em;
+           padding: 15px;
+           color: #CFB53B;
+           
+       }
+
+       .flip-card-back h1
+       {
+           font-size: 1.2em;
+           margin-top: 10px;
+           color: #fff;
+           
+       }
+
+    
+    </style>
+
+</head>
+<body>
+    
+
+    <section id = "home">
+        <header>
+            <a href="#"><img src = "../NFTPics/ethlogo3.png" class="logo"></a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#">Meet The Team</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </header>
+        
+        <div class="Content">
+            <div class="textbx">
+                <h2>Welcome To The Future<br><span>Meta Lottery Sweepstakes</span></h2>
+                
+                <p>Meta Lottery Sweepstakes is looking to revolutionize the NFT space by being one of the first projects to solely focus on giving back to our community.<br><br>
+
+                    Our goal is to create an exclusive lottery for our investors and give them the opportunity to effortlessly take home large sums of money, simply by being a part of our revolution. We aim to create rewarding and community-focused sweepstakes games for our community to participate in. As time goes on, the winnings and rewards will increase with the growth of our community. <br><br>
+                    <!--
+                    We truly believe that a strong community should be frequently rewarded for their efforts, contributions, and hard work to not only our project but the entire NFT space as a whole. Without great minds like you, NFTs would not be anywhere near where they are today.<br><br> 
+                    
+                    Because of this, we are placing a massive emphasis on rewarding our holders - something that we feel is long overdue.
+                    <p> -->
+                </div>
+
+         <div class="img1">
+            <img src="../NFTPics/MetaLotteryCard-removebg-preview.png" class = "ethcard">   
+        </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1645113158">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    
+    
+    <section class="about" id="about">
+        
+        <div class="aboutcontent">
+            <div class="abouttext">
+                
+                <h2>A Decentralized Lottery<br><span>How Does It Work?</span></h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h2>Weekly Giveaways</h2>
+                    <p>
+                        The weekly jackpot will be drawn every Sunday at 8 PM EST via Livestream held by our team members. <br><br>
+
+                        This will be done to ensure transparency between the developers and the community, as well as to eliminate the fear of fraudulent activity. Other measures will also be taken to ensure this as well.<br><br>
+                        
+                        A random number generator will pick a number between 1 and 5000 <br><br>
+                        
+                        The wallet address that holds the winning number will be airdropped the weekly jackpot <br><br>
+                        </p>
+                </div>
+                
+                    <!-- <div class="img2">
+                        <img src="../NFTPics/MetaLotteryCard-removebg-preview.png">
+                    </div> -->
+
+                <div class="column">
+                    <h2>Daily Giveaways</h2>
+                    <p>
+                        Daily sweepstakes will occur randomly throughout the day and will take place via airdrop as well <br><br>
+
+                        These will be smaller in size compared to the jackpot but will happen a lot more frequently <br><br>
+
+                        These drawings will not be live-streamed, but our team will let the community know when these are taking place. <br><br>
+
+                        Each winning address will be stored and restricted to one win per week. This is to ensure that we are spreading wealth and fairness to our community. Restrictions will reset every Sunday immediately following the weekly jackpot.<br><br>
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-shape-divider-bottom-1645229796">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+
+    <section class="roadmap" id="roadmap">
+       
+      <div card="parent">
+        <div class="roadtext">
+                
+            <h2>Our Roadmap<br><span>Big Things Are Coming</span></h2>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>20%</h2>
+            </div>
+            <div class="flip-card-back">
+              <h1>Weekly And Daily Pot Increase</h1> 
+              <p>The total amount in the prize pool
+              will see a sizeable increase as we gain traction in the NFT space. More and more winners will be able to win larger prizes as we grow our community and establish ourselves as a community-focused project.</p>
+              
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>40%</h2>
+              
+            </div>
+            <div class="flip-card-back">
+              <h1> Diamond Ticket NFT Release</h1> 
+              <p>The Diamond ticket collection will be very limited to those who are looking to up the ante and try their luck at more than just money. Diamond ticket holders will be eligible for sweepstakes that regular holders will not be such as watches, plane tickets to a destination of choice and much more. These will be much more limited.</p> 
+              
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>60%</h2>
+            </div>
+            <div class="flip-card-back">
+              <h1>Holder Exclusives</h1> 
+              <p>We will offer our community of holders with exclusive merchandise, other goods, and exclusive opportunities as a token of our appreciation.
+            </p> 
+              
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>80%</h2>
+              
+            </div>
+            <div class="flip-card-back">
+              <h1>NFT Sweepstakes</h1> 
+              <p>Every Sunday, along with our jackpot, holders will also be entered in for the chance to win NFTs. Holders will be able to vote on which collection they would like to have raffled every single week. This will be a separate drawing from the weekly jackpot. 
+            </p> 
+             
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>100%</h2>
+       
+            </div>
+            <div class="flip-card-back">
+              <h1>Headquarters in the Metaverse</h1> 
+              <p>Our own established clubhouse will come to life in the metaverse that is chosen by the holders. The only way to gain access is to possess a golden or diamond ticket. Here, we will have a place to meet one another, network, and become the greatest virtual community there is! </p> 
+             
+            </div>
+  
+            
+            
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>120%</h2>
+             
+            </div>
+            <div class="flip-card-back">
+              <h1>We Only Have Two Words...</h1> 
+              <p>Solana Lottery</p> 
+              
+            </div>
+  
+            
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+</body>
+</html>
